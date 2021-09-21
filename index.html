@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" ontouchmove>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vajk - Personal portfolio</title>
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+  <!--<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+  <!--saját stílusok-->
+<link rel="icon" href="https://themetrading.com/html/runaway/template/regular/images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)),
+        url('images/ruander-kozos-hero-kep.jpeg') center center no-repeat;
+      background-size: cover;
+      height: 100vh;
+      position: relative;
+      top: -70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      z-index: -1;
+      line-height: 2;
+    }
+
+      /* Desktop */
+      @media screen and (min-width: 1200px) {
+        .grid-1-1-1 {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+  </style>
+</head>
+
+<body tabIndex=0>
+  <!--==========================================================================
+=================================== DESKTOP NAVBAR =============================
+===========================================================================-->
+  <section id="desktopNavbar" class="desktop-navbar">
+    <div class="container">
+      <div class="logo-div">
+        <img src="https://themetrading.com/html/runaway/template/regular/images/logo/1.png" alt="logo">
+      </div>
+      <div class="linkek-div">
+        <ul class="betuszin-valasztashoz-js">
+          <li><a href="index.html" class="home-link">home</a></li>
+          <li><a href="#about" class="desktop-nav-link-1">about</a></li>
+          <li><a href="#skill" class="desktop-nav-link-2">skill</a></li>
+          <li><a href="#services" class="desktop-nav-link-3">services</a></li>
+          <li><a href="#portfolio" class="desktop-nav-link-4">portfolio</a></li>
+          <li><a href="#testimonials" class="desktop-nav-link-5">testimonials</a></li>
+          <li><a href="#blog" class="desktop-nav-link-6">blog</a></li>
+          <li><a href="#contact" class="desktop-nav-link-7">contact</a></li>
+        </ul>
+      </div>
+      <div class="">
+        <button id="menu-toggle" class="menu-toggle" onclick="ButtonBarToggle()"><i class="fa fa-bars"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================================================================
+  =================================== MOBILE NAVBAR ============================
+  ===========================================================================-->
+  <section id="mobileNav" class="container">
+    <ul>
+      <li><a href="index.html" class="home-link">home</a></li>
+      <li><a href="#about" class="mobile-nav-link-1">about</a></li>
+      <li><a href="#skill" class="mobile-nav-link-2">skill</a></li>
+      <li><a href="#services" class="mobile-nav-link-3">services</a></li>
+      <li><a href="#portfolio" class="mobile-nav-link-4">portfolio</a></li>
+      <li><a href="#testimonials" class="mobile-nav-link-5">testimonials</a></li>
+      <li><a href="#blog" class="mobile-nav-link-6">blog</a></li>
+      <li><a href="#contact" class="mobile-nav-link-7">contact</a></li>
+    </ul>
+  </section>
+
+  <!--==========================================================================
+  ========================== FIXED BLACK ROTATING ICON =========================
+  ===========================================================================-->
+  <div class="forgo-fekete-icon-div">
+    <i class="fas fa-cog forgo-fekete-settings"></i>
+  </div>
+
+  <!--==========================================================================
+  =================================== HERO ====================================
+  ===========================================================================-->
+  <section id="hero">
+    <div class="container">
+      <span>I Am Austin Jackson!</span>
+      <h1>I am a <span class="anim">Developer</span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi non excepturi minima <br> animi dolorum explicabo quia provident recusandae ratione!</p>
+      <!-- <a href="#" class="btn btn-primary in-hero-button">Download cv</a> -->
+      <button class="btn btn-primary in-hero-button">Download cv</button>
+    </div>
+  </section>
+
+  <!--==========================================================================
+  =================================== ABOUT ====================================
+  ===========================================================================-->
+  <main>
+    <!--section.container#about{about}-->
+    <section class="container" id="about">
+      <!--.sectionTitle>span{about}+h2{about myself}+p>lorem20-->
+      <div class="sectionTitle"><span>about</span>
+        <h2>about myself</h2>
+        <p>Interdum a etiam sagittis vehicula porta. Massa felis eros quam blandit nulla dolor habitant. Ullamcorper quis ornare et proin pellentesque.</p>
+      </div>
+      <div class="flex-container">
+        <div class="box">
+          <p class="about-big-text-paragraph">Sodales iaculis est Scelerisque sociis magna dolor pulvinar magnis. Varius praesent suscipit. Donec morbi feugiat placerat gravida porttitor natoque nonummy parturient posuere. Magnis suspendisse
+            parturient. Magna ultricies nostra nunc magna. Sodales etiam arcu suscipit, mollis. Aenean tempor eu ipsum nisi sociosqu lorem hymenaeos sapien. Aptent maecenas ac ante molestie habitant.
+            Duis vulputate nisi nam sem penatibus parturient volutpat justo phasellus. Netus. Hac montes tempor lorem tempor tincidunt vehicula velit. Tellus. Class aenean leo elit maecenas. Vehicula sagittis. Curae; eget lacus. Fames neque diam
+            elementum risus eleifend dui tortor netus turpis.</p>
+          <div class="about-adatok-div">
+            <div class="about-adatok-bal-div">
+              <p class="about-adatok-paragraph"><span>Name:</span> Austin Jackson</p>
+              <p class="about-adatok-paragraph"><span>Email:</span> yourdomainname@gmail.com</p>
+              <p class="about-adatok-paragraph"><span>Phone:</span> +00 61 700 800</p>
+            </div>
+            <div class="about-adatok-jobb-div">
+              <p class="about-adatok-paragraph"><span>Date of Birth:</span> 14 December 1993</p>
+              <p class="about-adatok-paragraph"><span>Blood Group:</span> A+</p>
+              <p class="about-adatok-paragraph"><span>Address:</span> Mouroubra WA 6472, Australia. </p>
+            </div>
+          </div>
+        </div>
+        <div class="about-kep-div"><img class="about-kep" src="https://themetrading.com/html/runaway/template/regular/images/about/03.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!--==========================================================================
+    =================================== SKILL ====================================
+    ===========================================================================-->
+    <!--section#skill>.container{skill}-->
+    <section id="skill">
+      <div class="container">
+        <div class="sectionTitle"><span>skill</span>
+          <h2>developer skill</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur corporis est ipsam iure
+            libero nihil similique sit, velit voluptatem!</p>
+        </div>
+        <div class="flex-container">
+          <div class="box">
+            <h3 class="skill-paragraph-title">Some talk about my <br> professional design skill</h3>
+            <p class="skill-big-paragraph">At mattis condimentum leo cubilia dictumst purus cubilia nisl quisque lacus ultricies proin massa fermentum placerat sociosqu ornare felis ultricies taciti mauris. Tempor mi, cum a condimentum commodo
+              bibendum risus mauris natoque molestie tellus. In iaculis ad augue gravida posuere.
+              <br><br>
+              Lectus neque fames lacinia magnis primis. Dictumst torquent dictumst. Bibendum et rutrum feugiat fames interdum purus feugiat praesent Nunc vivamus habitant nam ultricies est. Massa amet cubilia, vitae nonummy nisl. Rutrum mus velit
+              vivamus sapien est.</p>
+          </div>
+          <div class="box">
+
+            <div class="range-title-div">
+              <p class="range-title">html</p>
+              <p>90%</p>
+            </div>
+            <div class="skill__range-tarto-div">
+              <div class="skill__range-szazalek szazalek-html"></div>
+            </div>
+
+            <div class="range-title-div">
+              <p class="range-title">css</p>
+              <p>95%</p>
+            </div>
+            <div class="skill__range-tarto-div">
+              <div class="skill__range-szazalek szazalek-css"></div>
+            </div>
+
+            <div class="range-title-div">
+              <p class="range-title">jquery</p>
+              <p>85%</p>
+            </div>
+            <div class="skill__range-tarto-div">
+              <div class="skill__range-szazalek szazalek-jquery"></div>
+            </div>
+
+            <div class="range-title-div">
+              <p class="range-title">php</p>
+              <p>90%</p>
+            </div>
+            <div class="skill__range-tarto-div">
+              <div class="skill__range-szazalek szazalek-php"></div>
+            </div>
+
+            <div class="range-title-div">
+              <p class="range-title">wordpress</p>
+              <p>90%</p>
+            </div>
+            <div class="skill__range-tarto-div">
+              <div class="skill__range-szazalek szazalek-wordpress"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <footer class="skill-footer">
+        <div class="container flex-container skill-iconos-divek">
+          <div class="box">
+            <img class="skill-icon" src="images/worker.png" alt="">
+            <p class="skill-big-number">7<span>+</span></p>
+            <p class="skill-icon-leiras">Years of Experience</p>
+          </div>
+          <div class="box">
+            <img class="skill-icon" src="images/work.png" alt="">
+            <p class="skill-big-number">145<span>+</span></p>
+            <p class="skill-icon-leiras">Project Done</p>
+          </div>
+          <div class="box">
+            <img class="skill-icon" src="images/smile.png" alt="">
+            <p class="skill-big-number">137<span>+</span></p>
+            <p class="skill-icon-leiras">Happy Clients</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!--========================================================================
+    ============================= SERVICES =====================================
+    =========================================================================-->
+    <section class="container" id="services">
+      <div class="sectionTitle"><span>services</span>
+        <h2>what i do</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi commodi eos, esse iusto neque
+          porro quidem rem repellat rerum!</p>
+      </div>
+      <div class="grid-container grid-1-1 grid-1-1-1">
+
+        <section class="services-box">
+          <header class="services-box-szam-div">
+            <p class="services-number">01.</p>
+          </header>
+          <div class="services-box-tobbi">
+            <h3 class="services-title">Web design</h3>
+            <i class="fas fa-desktop services-icon"></i>
+            <p class=services-paragraph>Proin a ullamcorper et primis lobortis laoreet senectus. Vitae dignissim sollicitudin eleifend cursus tempus curabitur posuere nam arcu platea sodales.</p>
+          </div>
+        </section>
+
+        <section class="services-box">
+          <header class="services-box-szam-div">
+            <p class="services-number">02.</p>
+          </header>
+          <h3 class="services-title">Web development</h3>
+          <i class="fas fa-laptop-code services-icon"></i>
+          <p class=services-paragraph>Proin a ullamcorper et primis lobortis laoreet senectus. Vitae dignissim sollicitudin eleifend cursus tempus curabitur posuere nam arcu platea sodales.</p>
+        </section>
+
+        <section class="services-box">
+          <header class="services-box-szam-div">
+            <p class="services-number">03.</p>
+          </header>
+          <h3 class="services-title">Word press</h3>
+          <i class="fab fa-wordpress-simple services-icon"></i>
+          <p class=services-paragraph>Proin a ullamcorper et primis lobortis laoreet senectus. Vitae dignissim sollicitudin eleifend cursus tempus curabitur posuere nam arcu platea sodales.</p>
+        </section>
+
+        <section class="services-box">
+          <header class="services-box-szam-div">
+            <p class="services-number">04.</p>
+          </header>
+          <h3 class="services-title">graphic design</h3>
+          <i class="fas fa-drafting-compass services-icon"></i>
+          <p class=services-paragraph>Proin a ullamcorper et primis lobortis laoreet senectus. Vitae dignissim sollicitudin eleifend cursus tempus curabitur posuere nam arcu platea sodales.</p>
+        </section>
+
+        <section class="services-box">
+          <header class="services-box-szam-div">
+            <p class="services-number">05.</p>
+          </header>
+          <h3 class="services-title">branding</h3>
+          <i class="fas fa-check-circle services-icon"></i>
+          <p class=services-paragraph>Proin a ullamcorper et primis lobortis laoreet senectus. Vitae dignissim sollicitudin eleifend cursus tempus curabitur posuere nam arcu platea sodales.</p>
+        </section>
+
+        <section class="services-box">
+          <header class="services-box-szam-div">
+            <p class="services-number">06.</p>
+          </header>
+          <h3 class="services-title">opencart</h3>
+          <i class="fas fa-shopping-cart services-icon"></i>
+          <p class=services-paragraph>Proin a ullamcorper et primis lobortis laoreet senectus. Vitae dignissim sollicitudin eleifend cursus tempus curabitur posuere nam arcu platea sodales.</p>
+      </div>
+    </section>
+
+    </section>
+    <!--========================================================================
+    ============================= PORTFOLIO ====================================
+    =========================================================================-->
+    <section id="portfolio">
+      <div class="container">
+        <div>
+          <div class="sectionTitle"><span>portfolio</span>
+            <h2>recent project</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, beatae delectus labore laborum neque
+              obcaecati porro quisquam quod unde vel?</p>
+          </div>
+        </div>
+        <div class="portfolio-list-div">
+          <ul>
+            <li class="portfolio-list-elem">all</li>
+            <li class="portfolio-list-elem">web design</li>
+            <li class="portfolio-list-elem">wordpress</li>
+            <li class="portfolio-list-elem">web development</li>
+            <li class="portfolio-list-elem">branding</li>
+          </ul>
+        </div>
+        <div class="portfolio-kepek-div grid-container grid-1-1 grid-1-1-1">
+          <div class="portfolio__keptarto-div">
+            <img class="portfolio-kep" src="https://themetrading.com/html/runaway/template/regular/images/portfolio/01.jpg" alt="">
+            <div class="megnovo-hatter">
+              <p>Wordpress</p>
+            </div>
+            <i class="far fa-eye"></i>
+          </div>
+          <div class="portfolio__keptarto-div">
+            <img class="portfolio-kep" src="https://themetrading.com/html/runaway/template/regular/images/portfolio/02.jpg" alt="">
+            <div class="megnovo-hatter">
+              <p>Branding</p>
+            </div>
+            <i class="far fa-eye"></i>
+          </div>
+          <div class="portfolio__keptarto-div">
+            <img class="portfolio-kep" src="https://themetrading.com/html/runaway/template/regular/images/portfolio/03.jpg" alt="">
+            <div class="megnovo-hatter">
+              <p>Web Development</p>
+            </div>
+            <i class="far fa-eye"></i>
+          </div>
+          <div class="portfolio__keptarto-div">
+            <img class="portfolio-kep" src="https://themetrading.com/html/runaway/template/regular/images/portfolio/04.jpg" alt="">
+            <div class="megnovo-hatter">
+              <p>Branding, CSS</p>
+            </div>
+            <i class="far fa-eye"></i>
+          </div>
+          <div class="portfolio__keptarto-div">
+            <img class="portfolio-kep" src="https://themetrading.com/html/runaway/template/regular/images/portfolio/05.jpg" alt="">
+            <div class="megnovo-hatter">
+              <p>Web Design, CSS</p>
+            </div>
+            <i class="far fa-eye"></i>
+          </div>
+          <div class="portfolio__keptarto-div">
+            <img class="portfolio-kep" src="https://themetrading.com/html/runaway/template/regular/images/portfolio/06.jpg" alt="">
+            <div class="megnovo-hatter">
+              <p>HTML, CSS</p>
+            </div>
+            <i class="far fa-eye"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--========================================================================
+    ============================= TESTIMONIAL ====================================
+    =========================================================================-->
+    <section class="container" id="testimonials">
+      <div class="sectionTitle"><span>testimonials</span>
+        <h2>what client saying</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad distinctio dolore doloremque, eligendi
+          necessitatibus quae quasi recusandae sed sint voluptatem.</p>
+      </div>
+      <div class="testimonial-fo-div">
+        <div class="testimonials-div testimonial-div-1">
+          <img class="testimonial-elem-kep" src="https://themetrading.com/html/runaway/template/regular/images/testimonial/01.jpg" alt="">
+          <img class="testimonial-elem-idezojel" src="https://themetrading.com/html/runaway/template/regular/images/testimonial/clone.png" alt="">
+          <div class="testimonial-elem-stars-div">
+            &#9734; &#9734; &#9734; &#9734; &#9734;
+          </div>
+          <p class="testimonial-elem-nev">Lorem Ipsum</p>
+          <p class="testimonial-elem-paragraph">Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.</p>
+        </div>
+        <div class="testimonials-div testimonial-div-2">
+          <img class="testimonial-elem-kep" src="https://themetrading.com/html/runaway/template/regular/images/testimonial/02.jpg" alt="">
+          <img class="testimonial-elem-idezojel" src="https://themetrading.com/html/runaway/template/regular/images/testimonial/clone.png" alt="">
+          <div class="testimonial-elem-stars-div">
+            &#9734; &#9734; &#9734; &#9734; &#9734;
+          </div>
+          <p class="testimonial-elem-nev">Lorem Ipsum</p>
+          <p class="testimonial-elem-paragraph">Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.</p>
+        </div>
+      </div>
+      <div class="testimonial-irany-gomb-div">
+        <div class="testimonial-irany-gomb"><i class="fas fa-angle-left"></i></div>
+        <div class="testimonial-irany-gomb"><i class="fas fa-angle-right"></i></div>
+      </div>
+    </section>
+
+    <!--========================================================================
+    =================================== BLOG ===================================
+    =========================================================================-->
+    <section id="blog">
+      <div class="container">
+        <div class="sectionTitle"><span>blog</span>
+          <h2>recent posts</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae doloribus iure odit optio sapiente
+            sint sit soluta unde vitae?</p>
+        </div>
+        <!--============ 3 doboz ==============-->
+        <div class="grid-container grid-container-blog grid-1-1-1">
+          <!--======================== ELSŐ DOBOZ ===========================-->
+          <div class="box blog-doboz-div">
+            <div class="blog-nagy-kep-div">
+              <div class="blog-szam-buborek">
+                <p class="blog-buborekban-szam">12</p><i class="fas fa-comment"></i>
+              </div>
+              <header>
+                <img class="blog-nagy-kep" src="https://themetrading.com/html/runaway/template/regular/images/blog/01.jpg" alt="">
+              </header>
+            </div>
+            <div>
+              <h2 class="blog-paragraph-cim">Convallis pulvinar morbi. Aenean nisi vitae metus nonummy a morbi.</h2>
+              <br>
+              <p class="blog-paragraph">Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere
+                augue.
+              </p>
+            </div>
+            <footer class="blog-alairas-egesz-div">
+              <div class="alairas-div">
+                <img src="https://themetrading.com/html/runaway/template/regular/images/about/02.jpg" alt="">
+                <span>By - <a href="#">Rockstar Jack</a></span>
+              </div>
+              <div class="alairas-date">
+                <p>18 jan 2019</p>
+              </div>
+            </footer>
+          </div>
+          <!--====================== MÁSODIK DOBOZ ==========================-->
+          <div class="box blog-doboz-div">
+            <div class="blog-nagy-kep-div">
+              <div class="blog-szam-buborek">
+                <p class="blog-buborekban-szam">18</p><i class="fas fa-comment"></i>
+              </div>
+              <header>
+                <img class="blog-nagy-kep" src="https://themetrading.com/html/runaway/template/regular/images/blog/02.jpg" alt="">
+              </header>
+            </div>
+            <div>
+              <h2 class="blog-paragraph-cim">Ornare fames imperdiet sapien. Iaculis dictum aptent commodo at iaculis.</h2>
+              <br>
+              <p class="blog-paragraph">Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere
+                augue.
+              </p>
+            </div>
+            <footer class="blog-alairas-egesz-div">
+              <div class="alairas-div">
+                <img src="https://themetrading.com/html/runaway/template/regular/images/about/02.jpg" alt="">
+                <span>By - <a href="#">Rockstar Jack</a></span>
+              </div>
+              <div class="alairas-date">
+                <p>18 jan 2019</p>
+              </div>
+            </footer>
+          </div>
+          <!--====================== HARMADIK DOBOZ =========================-->
+          <div class="box blog-doboz-div">
+            <div class="blog-nagy-kep-div">
+              <div class="blog-szam-buborek">
+                <p class="blog-buborekban-szam">18</p><i class="fas fa-comment"></i>
+              </div>
+              <header>
+                <img class="blog-nagy-kep" src="https://themetrading.com/html/runaway/template/regular/images/blog/03.jpg" alt="">
+              </header>
+            </div>
+            <div>
+              <h2 class="blog-paragraph-cim">Vulputate donec sem purus litora varius auctor augue suscipit hac.</h2>
+              <br>
+              <p class="blog-paragraph">Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere
+                augue.
+              </p>
+            </div>
+            <footer class="blog-alairas-egesz-div">
+              <div class="alairas-div">
+                <img src="https://themetrading.com/html/runaway/template/regular/images/about/02.jpg" alt="">
+                <span>By - <a href="#">Rockstar Jack</a></span>
+              </div>
+              <div class="alairas-date">
+                <p>18 jan 2019</p>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="blog-button-div"><button class="btn btn-primary">view blog</button></div>
+      </div>
+    </section>
+
+    <!--========================================================================
+    =================================== CONTACT ================================
+    =========================================================================-->
+    <section class="container" id="contact">
+      <div class="sectionTitle">
+        <span>contact</span>
+        <h2>Get in Touch</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eius excepturi explicabo itaque laborum
+          mollitia natus nihil nostrum soluta voluptates.</p>
+      </div>
+      <div class="grid-container grid-1-2">
+        <ul class="box info">
+          <li>
+            <b>Email</b>
+            <a href="mailto:vajk93@icloud.com">vajk93@icloud.com</a>
+          </li>
+          <li>
+            <b>Phone</b>
+            <a href="tel: +1232344445">+36 70 408 17 03</a>
+          </li>
+          <li>
+            <b>Address</b>
+            <p>1139. Budapest, Frangepán u. 3.</p>
+          </li>
+          <li>
+            <b>Website</b>
+            <a href="https://ruander.hu" target="_blank">https://ruander.hu</a>
+          </li>
+          <li>
+            <i class="ikon fab fa-facebook-f"></i>
+            <i class="ikon fab fa-twitter"></i>
+            <i class="ikon fab fa-google-plus-g"></i>
+            <i class="ikon fab fa-linkedin-in"></i>
+            <i class="ikon fab fa-instagram"></i>
+          </li>
+        </ul>
+        <form class="box contact-form grid-container grid-1-1">
+          <label>
+            <input type="text" name="name" placeholder="Your Name">
+          </label>
+          <label>
+            <input type="text" name="email" placeholder="Email Address">
+          </label>
+          <label>
+            <input type="text" name="subject" placeholder="Subject">
+          </label>
+          <label>
+            <textarea name="message" placeholder="Message"></textarea>
+          </label>
+          <button class="btn btn-primary contact-button">send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--==========================================================================
+  =================================== FOOTER ===================================
+  ===========================================================================-->
+  <footer class="footer-legalul">
+    <p>&copy; Turóczy Vajk vizsgaoldal 2021</p>
+    <a href="https://themetrading.com/html/runaway/template/regular/index-5.html" target="_blank"> | Eredeti | </a>
+    <a href="https://www.facebook.com/vajk.turoczy.5/ " target="_blank"><i class="fab fa-facebook"></i></a>
+  </footer>
+
+  <script src="javascript.js"></script>
+
+
+</body>
+
+</html>
